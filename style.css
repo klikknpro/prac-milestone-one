@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  /* a szamolt meret = content + padding + border */
+  /* content-box ne legyen! (pedig ez az alapertelmezett)
+  a "margin" viszont mindig ezen kivul van, egyik esetben SEM [SOHA!] szamoljuk bele az elem mereteibe*/
+  background: transparent;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a,
+img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+input,
+textarea,
+select {
+  appearance: none !important;
+  -webkit-appearance: none !important; /* safari, opera, chrome miatt */
+  border-radius: 0;
+}
+
+/* CSS reset */
+
+body {
+  font-family: "Barlow", sans-serif;
+  color: #a8a8a8;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+section.one {
+  background-color: #e62579;
+}
+
+section.two {
+  background-color: #e6d43c;
+}
+
+section.three {
+  background-color: #118399;
+}
+
+button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(-40px, -40px);
+  width: 200px;
+  height: 60px;
+  font-size: 24px;
+}
+
+.one button {
+  background-color: #25e62c;
+}
+
+.two button {
+  background-color: #613ce6;
+}
+
+.three button {
+  background-color: #995011;
+}
